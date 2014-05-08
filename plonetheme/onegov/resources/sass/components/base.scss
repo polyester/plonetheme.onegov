@@ -130,7 +130,7 @@ a,
 /* @group personal tools */
 
 #portal-personaltools-wrapper {
-  float: right;
+  float: none;
 }
 #anon-personalbar > a {
   display: inline;
@@ -709,7 +709,8 @@ ol {
   color: $text-color-light;
 }
 .documentDescription {
-  display: none;
+  color: $text-color-light;
+  margin-bottom: 1em;
 }
 
 /* @end */
