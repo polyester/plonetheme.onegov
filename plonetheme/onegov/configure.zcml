@@ -65,5 +65,6 @@
   <theme:add_scss path="resources/sass/components/reservation.scss" />
   <theme:add_scss path="resources/sass/components/accessibility.scss" />
   <theme:add_scss path="resources/sass/components/overrides.scss" />
+  <theme:add_scss path="resources/custom.scss" />
 
 </configure>
