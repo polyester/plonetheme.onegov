@@ -1,8 +1,55 @@
 Changelog
 =========
 
-1.2.4 (unreleased)
+1.2.7 (unreleased)
 ------------------
+
+- Updated styles for book reader view.
+  [Julian Infanger]
+
+
+1.2.6 (2014-06-24)
+------------------
+
+- Adds styles for new navigation introduced in seantis.people 0.19
+  [href]
+
+- Various seantis.reservation improvements.
+  [href]
+
+- Removes superfluous scrollbars in fullcalendar instances.
+  [href]
+
+
+1.2.5 (2014-06-12)
+------------------
+
+- Updated margin of tabbedview headings.
+  [Julian Infanger]
+
+- Use 100% for table in meeting item body.
+  [Julian Infanger]
+
+- Only style button links as button.
+  [Julian Infanger]
+
+- Use pdf icon for export pdf document action.
+  [Julian Infanger]
+
+- Do not show default pages in navigation.
+  If the parent is a default page, show the default page title.
+  [jone]
+
+- Fixed skins properties.
+  Do not longer inject skin layer into all skins.
+  [Julian Infanger]
+
+
+1.2.4 (2014-05-09)
+------------------
+
+- Fixed listing block gallery styles.
+  [Julian Infanger]
 
 - Added outline style for :focus, to ensure better accessibility.
   [Julian Infanger]

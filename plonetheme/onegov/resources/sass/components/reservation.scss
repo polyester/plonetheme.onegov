@@ -2,6 +2,22 @@
 
 /* @group fullcalendar */
 #content {
+    .fc-event-title {
+        font-size: 1.1em;
+    }
+    .fc-event-time {
+        font-size: 1.1em;
+        display: block;
+    }
+    .fc-view-agendaWeek .fc-event {
+        margin-left: 2px;
+    }
+    .fc-event-time,
+    .fc-event-title {
+        padding: 1px 0 0 2px;
+        display: block;
+    }
+
     .event-available {
         background-color: $reservation-available-color !important;
         border-color: $reservation-available-color  !important;
@@ -53,7 +69,6 @@
         }
     }
 }
-
 /* @end */
 
 /* @group calendar context-menu */
@@ -79,17 +94,37 @@
 
 /* @group calendar legend */
 .portaltype-seantis-reservation-resource .legend {
-    margin-top: -1em;
     position: relative;
-    left: -1px;
     padding-top: 0.25em;
     padding: 0.25em 0.5em;
+}
+/* @end */
+
+/* @group reservation form */
+.seantis-reservation-form {
+    span.option {
+        display: block;
+    }
 }
 /* @end */
 
 /* @group reservations management */
 .reservation-urls {
     float: right;
+}
+.reservation-urls .reservation-action {
+    @include tag();
+    display: inline-block;
+    float: none;
+    margin-right: 0;
+}
+.reservation-urls .reservation-action-approve {
+    background: #e7f0e7;
+}
+.reservation-urls .reservation-action-deny,
+.reservation-urls .reservation-action-revoke {
+    background: #f0e7e7;
+    border: 1px solid #f0e7e7;
 }
 /* @end */
 
@@ -156,7 +191,7 @@
         .reservation-title {
             background-color: $lightgray2;
             margin-bottom: 0.25em;
-            padding: 0.25em 0.5em;
+            padding: 0.25em 0.4em 0.4em 0.4em;
         }
 
         .reservation-title h3 {
@@ -178,13 +213,10 @@
             float: left;
             width: 50%;
 
-            span {
-                font-weight: bold;
-            }
-
             span.label {
                 font-weight: normal;
                 margin-right: 0.5em;
+                color: $darkgray;
             }
         }
 
@@ -193,12 +225,23 @@
             width: 50%;
         }
 
-        .block-title {
-            font-weight: bold;
-        }
-
         .reservation-data-update {
             margin-top: 1em;
+        }
+
+        .block-title {
+            font-weight: bold;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+            border-bottom: 1px solid #efefef;
+        }
+
+        .reservation-data > div {
+            margin-bottom: 0.5em;
+        }
+
+        .reservation-data .label {
+            display: block;
         }
     }
 }
@@ -285,6 +328,31 @@
     }
 }
 
+/* @end */
+
+/* @group limited list */
+
+.limitedList {
+    width: auto;
+    max-width: 600px;
+    max-height: 500px;
+
+    .fc-event {
+        padding: 2px 6px 1px 6px;
+        display: inline-block;
+        border-radius: 2px;
+        margin-bottom: 0.5em;
+    }
+
+    .fc-event-time,
+    .fc-event-title {
+        font-size: 1.1em;
+    }
+
+    .fc-event-inner {
+        width: auto;
+    }
+}
 /* @end */
 
 /* @group overviewlets */
@@ -378,7 +446,6 @@
 table.timetable div.timespan div.occupied {
     background-color: $reservation-unavailable-color;
 }
-
 /* @end */
 
 /* @end */

@@ -488,6 +488,14 @@ div.slideNavi .globalnav li a {
 
 /* @end */
 
+/* @group meeting */
+
+.MeetingItemBody > table.listing {
+  width: 100%;
+}
+
+/* @end */
+
 /* @group news portlet */
 
 .portlet.portletCollection.newsTemplate {
@@ -805,6 +813,10 @@ div.sl-controls {
 .sl-img-small .sl-img-wrapper,
 .sl-img-middle .sl-img-wrapper {
   margin-right: 2em;
+}
+div.ListingBlock div.gallery .sl-img-wrapper img {
+  display: block;
+  margin: auto;
 }
 
 /* @end */
