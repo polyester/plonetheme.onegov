@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.2.7.dev0'
+version = '1.3.1.dev0'
 
 tests_require = [
     'ftw.builder',
@@ -41,7 +41,7 @@ setup(name='plonetheme.onegov',
         'Products.CMFCore',
         'collective.mtrsetup',
         'ftw.mobilenavigation>=1.2.3',
-        'ftw.slider',
+        'ftw.slider >= 2.0.0',
         'ftw.upgrade',
         'setuptools',
         'plone.batching',

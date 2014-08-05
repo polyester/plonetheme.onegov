@@ -1,8 +1,71 @@
 Changelog
 =========
 
-1.2.7 (unreleased)
+1.3.1 (unreleased)
 ------------------
+
+- Nothing changed yet.
+
+
+1.3.0 (2014-08-05)
+------------------
+
+- Added new styles for the upcoming seantis.reservation 1.1 release.
+  [href]
+
+- Changed PostIt portlet color to yellow.
+  [Julian Infanger]
+
+- Use bigger font for print.
+  [Julian Infanger]
+
+- Add z3c form "required" styles (Copy from plone authoting.css).
+  [mathias.leimgruber]
+
+- Added icon for kml download document action.
+  [Julian Infanger]
+
+- Added styles for ftw.bridge watcher portlet.
+  [Julian Infanger]
+
+
+1.2.9 (2014-07-16)
+------------------
+
+- Removed !global variable, this caused problems.
+  [Julian Infanger]
+
+
+1.2.8 (2014-07-16)
+------------------
+
+- Do not hide .documentDescription globally.
+  [Julian Infanger]
+
+- Improves positioning of "edit formdata" link in seantis.reservation.
+  [href]
+
+- Adds styles for new 'broken-data' view in seantis.reservation.
+  [href]
+
+- Fixed path of pb_close image.
+  [Julian Infanger]
+
+- Make Onegov Theme default Skin
+  [tschanzt]
+
+- Use portal_url for portal and theme url also added the portalurl to the csscachekey so we don't get problems with image.
+  [tschanzt]
+
+1.2.7 (2014-07-11)
+------------------
+
+- Updated styles for new ftw.slider implementation.
+  Requires ftw.slider >= 2.0.0
+  [Julian Infanger]
+
+- Make Textarea wider on notification_form.
+  [tschanzt]
 
 - Updated styles for book reader view.
   [Julian Infanger]

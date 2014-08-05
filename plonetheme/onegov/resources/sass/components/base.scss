@@ -600,6 +600,27 @@ dl.teaser_portlet .portletHeader img {
 
 /* @end */
 
+/* @group post it portlet */
+
+#dashboard dl.portlet.postit.portletPostIt {
+  $postit-bg: #DCC126;
+  dt {
+    background-color: $postit-bg;
+    color: #000;
+    .portletActionsWrapper {
+      background: lighten(desaturate($postit-bg, 20%), 20%);
+    }
+  }
+  dd {
+    background: lighten($postit-bg, 40%);
+    &.even {
+      background: lighten($postit-bg, 35%);
+    }
+  }
+}
+
+/* @end */
+
 /* @group dashboard */
 
 $dashboard-bg: $global-navigation-border-color;
@@ -716,10 +737,8 @@ ol {
 .discreet {
   color: $text-color-light;
 }
-.documentDescription {
-  color: $text-color-light;
-  margin-bottom: 1em;
-}
+
+
 
 /* @end */
 
