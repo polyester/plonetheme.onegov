@@ -4,6 +4,7 @@ from plonetheme.onegov.customstyles import CustomStyles
 from plonetheme.onegov.interfaces import CUSTOMSTYLES_ANNOTATION_KEY
 from plonetheme.onegov.interfaces import ICustomStyles
 from plonetheme.onegov.testing import THEME_INTEGRATION_TESTING
+from scss.errors import SassError
 from zope.annotation import IAnnotations
 from zope.interface.verify import verifyClass
 
@@ -75,3 +76,10 @@ class TestICustomStylesAdapter(MockTestCase):
         self.replay()
 
         adapter.set('css.body-background', 'blue')
+
+    def test_scss_generation_doesnt_fail(self):
+        view = self.portal.unrestrictedTraverse('customstyles_css')
+        try:
+            view.generate_css()
+        except SassError, e:
+            self.fail("Scss generation wasn't successful! ({})".format(e.exc))
