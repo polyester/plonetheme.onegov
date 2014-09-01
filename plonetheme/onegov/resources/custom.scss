@@ -21,3 +21,23 @@
 img.newsImage{
   float: right;
 }
+
+
+.callout {
+    background-color: #ddd;
+    color: #333;
+    float: right;
+    font-size: 85%;
+    padding: 10px;
+    width: 30%;
+}
+
+#glossary-definition-popup {
+background: none repeat scroll 0 0 #FFF76E;
+}
+.highlightedGlossaryTerm {
+  background: none repeat scroll 0 0 #FFF991;
+  border-bottom: 1px dotted Black;
+  cursor: help;
+  z-index: 2;
+}

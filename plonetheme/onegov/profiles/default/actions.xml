@@ -5,7 +5,7 @@
   <object name="top_actions" meta_type="CMF Action Category">
     <property name="title"></property>
     <object name="onegov" meta_type="CMF Action" i18n:domain="plone">
-      <property name="visible">True</property>
+      <property name="visible">False</property>
       <property name="title">www.onegov.ch</property>
       <property name="description">OneGov</property>
       <property name="url_expr">string:http://onegov.ch</property>
