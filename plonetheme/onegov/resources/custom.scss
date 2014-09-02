@@ -41,3 +41,15 @@ background: none repeat scroll 0 0 #FFF76E;
   cursor: help;
   z-index: 2;
 }
+
+#content #slider-wrapper .sliderText {
+  background-color: rgba(255,255,255,0.7);
+  background-image: none;
+  color: #000;
+  height: 30%;
+  right: none;
+  left: 0;
+  width: 100%;
+  margin-bottom: 0;
+  overflow: hidden; }
+
