@@ -33,11 +33,11 @@ img.newsImage{
 }
 
 #glossary-definition-popup {
-background: none repeat scroll 0 0 #FFF76E;
+background: none repeat scroll 0 0 #FFFB8F;
 }
 .highlightedGlossaryTerm {
-  background: none repeat scroll 0 0 #FFF991;
-  border-bottom: 1px dotted Black;
+  background: none;
+  border-bottom: 1px dotted #888;
   cursor: help;
   z-index: 2;
 }
