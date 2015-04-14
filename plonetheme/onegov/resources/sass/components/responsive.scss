@@ -144,12 +144,15 @@ img {
   #portal-personaltools-wrapper {
     float: none;
   }
-  #portal-personaltools #anon-personalbar {
-    margin-top: 0;
-    position: absolute;
-    right: 0.5em;
+  #portal-personaltools.anon-personalbar {
+    margin-top: 52px;
+    direction: rtl;
     a {
       font-size: 100%;
+    }
+    li {
+        float:none;
+        display: inline;
     }
   }
   #portal-languageselector,
@@ -170,7 +173,8 @@ img {
   #portal-languageselector dt {
     display: none;
   }
-  #portal-languageselector dd {
+  #portal-languageselector dd,
+  #portal-personaltools-wrapper dd {
     position: absolute;
     margin-top: 52px;
   }

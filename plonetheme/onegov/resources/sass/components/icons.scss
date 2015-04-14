@@ -149,6 +149,19 @@
   @include icon($char: "F ");
 }
 
+/* seantis.dir.base and seantis.dir.contacts */
+.contenttype-seantis-dir-contacts-directory {
+  @include icon($char: "F ");
+}
+
+.contenttype-seantis-dir-contacts-item {
+  @include icon($char: "_ ");
+}
+
+.contenttype-seantis-dir-contacts-contact {
+  @include icon($char: "");
+}
+
 /* ftw.shop */
 .contenttype-supplier {
   @include icon($char: "8 ");
@@ -250,6 +263,9 @@ dl.portletNavigationTree img {
 #document-actions #document-action-kml_download a {
   @include icon($char: 'Y ');
 }
+#document-actions #document-action-zip_download a {
+  @include icon($char: 'c ');
+}
 
 #document-actions #document-action-print a,
 #document-actions #document-action-watch a,
@@ -258,7 +274,8 @@ dl.portletNavigationTree img {
 #document-actions #document-action-pdf a,
 #document-actions #document-action-pdf_export a,
 #document-actions #document-action-reader a,
-#document-actions #document-action-kml_download a {
+#document-actions #document-action-kml_download a,
+#document-actions #document-action-zip_download a {
   @include invisible_text($icon-size: 20px);
 }
 

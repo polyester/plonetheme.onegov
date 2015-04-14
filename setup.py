@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.3.3.dev0'
+version = '1.5.2.dev0'
 
 tests_require = [
     'ftw.builder',
@@ -45,7 +45,7 @@ setup(name='plonetheme.onegov',
         'ftw.upgrade',
         'setuptools',
         'plone.batching',
-        'PyScss',
+        'PyScss <= 1.2.1',
         ],
       tests_require=tests_require,
       extras_require=dict(tests=tests_require),

@@ -501,6 +501,11 @@ div.slideNavi .globalnav li a {
 /* @group news portlet */
 
 .portlet.portletCollection.newsTemplate {
+
+  dd ul {
+    list-style-type: none;
+    padding: 0;
+  }
   .portletItemTitle {
     margin: 0.25em 0 0.25em 0;
     font-weight: bold;
