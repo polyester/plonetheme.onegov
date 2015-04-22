@@ -12,8 +12,10 @@ function close_opened_breadcrumbs(element) {
 
 jQuery(function($) {
 
-  var load_flyout_children = function(indicator, open) {
-    var me = indicator;
+  // flyout navigation
+  $('#portal-globalnav.flyoutEnabled > li > .wrapper a').click(function(e){
+    e.preventDefault();
+    var me = $(this);
     var parent = me.parent('.wrapper').parent('li');
 
     // hide all but this children
@@ -24,32 +26,19 @@ jQuery(function($) {
     var children = parent.find('ul:first');
     if (children.length == 0) {
       $.ajax({
-        type : 'GET',
+        type : 'POST',
         url : me.attr('href') + '/load_flyout_children',
         success : function(data, textStatus, XMLHttpRequest) {
           if (textStatus == 'success') {
             var result = $(data);
-            result.hide();
             parent.removeClass('loading');
             parent.append(result);
           }
         }
       });
     }
-    if(open) {
-      parent.toggleClass('flyoutActive');
-    }
+    parent.toggleClass('flyoutActive');
     children.toggle();
-  }
-
-  $('#portal-globalnav.flyoutEnabled > li > .wrapper a').each(function(idx, el){
-    load_flyout_children($(el), false);
-  });
-
-  // flyout navigation
-  $('#portal-globalnav.flyoutEnabled > li > .wrapper a').click(function(e){
-    e.preventDefault();
-    load_flyout_children($(this), true);
   });
   // close flyout and breadcrumb children onclick on body
   $('body').click(function(e){
@@ -82,13 +71,13 @@ jQuery(function($) {
     var obj = $(b);
     if (!obj.hasClass('factory')) {
       $.ajax({
-        type : 'GET',
+        type : 'POST',
         url : obj.attr('href') + '/load_flyout_children',
         data: {breadcrumbs: true},
         success : function(data, textStatus, XMLHttpRequest) {
-          if (textStatus === 'success') {
+          if (textStatus == 'success') {
             if (data.length > 0) {
-              if ($(data).hasClass('children') && $(data).is('ul')) {
+              if (data.search('<ul class="children">')!=-1) {
                 obj.after('<a href="'+obj.attr('href')+'" class="loadChildren" tabindex="-1">▼</a>');
                 obj.after(data);
               }
