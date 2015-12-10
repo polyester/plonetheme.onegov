@@ -46,11 +46,12 @@
     <replace css:content="#portal-globalnav-wrapper" css:theme="#portal-globalnav" />
     <replace css:content="#portal-searchbox" css:theme="#portal-searchbox" />
     <replace css:content="#portal-personaltools-wrapper" css:theme="#portal-personaltools-wrapper" />
-    <replace css:content="#plonesocial-navigation" css:theme="#plonesocial-navigation" />
     <replace css:content="#portal-languageselector" css:theme="#portal-languageselector" />
+
     <replace css:content-children="#portal-topactions" css:theme-children="#portal-topactions" />
 
     <replace css:content="ul.mobileButtons" css:theme="ul.mobileButtons" />
+    <before css:content="#globalstatusmessage" css:theme-children="#breadcrumbs-wrapper" />
 
     <replace css:content-children="#portal-breadcrumbs" css:theme-children="#portal-breadcrumbs" />
     <drop css:content="#portal-breadcrumbs" />

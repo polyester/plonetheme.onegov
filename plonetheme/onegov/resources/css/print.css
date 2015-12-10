@@ -7,30 +7,33 @@ img, h1, h2, h3, h4 {
 .olLayerDiv img {
     max-width: none;
 }
-
 #header-wrapper,
 #portal-topactions,
-#portal-breadcrumbs,
+#breadcrumbs-wrapper,
 #document-actions,
 #column-navigation,
 #column-sidebar,
 #header-delimiter,
 #edit-bar,
 .sl-controls,
+.mobileButtons,
+.logoRow,
+.eea-annotator,
 .managePortletsLink,
+.commentActions,
+#commenting,
 #mobile-navbuttons,
 #mobile-navi-wrapper,
 #plone-document-byline,
 #footer,
-#plonesocial-navigation,
 .to_top,
-.bottom-actions
+.bottom-actions,
+#viewlet-below-content-body,
+#viewlet-below-content,
+.annotator-outer
 { display: none !important; }
-
-
 h1 {
     font-size: 26pt !important;
-
 }
 h2 {
     font-size: 18pt !important;
@@ -52,7 +55,7 @@ h2 {
 }
 html, html body {
     background-color: #FFFFFF !important;
-    font-size: 12pt;
+    font-size: 14pt;
 }
 #column-content {
     left: 0;
@@ -67,7 +70,20 @@ a, a:hover, a:visited, a:active {
 }
 /*Elements to hide*/
 
-#portal-topactions, #portal-languageselector-wrapper, #portal-personaltools-wrapper, #portal-globalnav, #portal-searchbox, #breadcrumbs-wrapper, #column-navigation, #column-sidebar, #footer, #banner-image, .documentEditable #edit-bar, #addResponse, .portletActionsWrapper, #dashboard-add-portlet, form {
+#portal-topactions,
+#portal-languageselector-wrapper,
+#portal-personaltools-wrapper,
+#portal-globalnav,
+#portal-searchbox,
+#breadcrumbs-wrapper,
+#column-navigation,
+#column-sidebar,
+#footer,
+#banner-image,
+.documentEditable #edit-bar,
+#addResponse,
+.portletActionsWrapper,
+#dashboard-add-portlet {
     display: none !important;
 }
 .sliderText {

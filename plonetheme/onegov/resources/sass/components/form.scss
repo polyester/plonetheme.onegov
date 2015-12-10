@@ -186,6 +186,7 @@ dl.enableFormTabbing dd {
   padding-top: 2em;
 }
 .field {
+  clear: both;
   margin-bottom: 1em;
 }
 .field input[type="text"][name$=".title"],

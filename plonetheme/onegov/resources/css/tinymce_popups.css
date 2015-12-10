@@ -20,7 +20,6 @@
 }
 .dialog-wrapper #footer {
   height: auto;
-  position: relative;
 }
 .dialog-wrapper label {
   font-weight: bold;
